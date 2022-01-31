@@ -1,0 +1,78 @@
+$font: "Segoe UI Historic", "Segoe UI", sans-serif;
+
+$dark-light: #242526;
+$dark: #18191a;
+
+$popUpShadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+
+$primaryBorder: #373839;
+
+$primaryHr: #3e4042;
+$primaryText: #b0b3b8;
+$whiteText: #e4e6eb;
+$primaryIcon: #e4e6eb;
+
+$inputText: #e4e6eb;
+$inputBackground: #3a3b3d;
+
+$buttonBackground: rgba(255, 255, 255, 0.1);
+$buttonHoverBackground: rgba(255, 255, 255, 0.1);
+$buttonActiveBackground: rgba(45, 136, 255, 0.2);
+$buttonActiveHoverBackground: rgb(80, 171, 255, 0.25);
+$iconButtonHoverBackground: rgba(255, 255, 255, 0.2);
+
+$headerHeight: 56px;
+$headerBthPlaceholder: #c8c8c8;
+$headerBthPlaceholderColor: #050505;
+
+$postBackground: #242527;
+
+$modalCardBackground: #242526;
+
+@mixin flexJustifyAlign($justify, $align) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+@mixin textOverflow {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    white-space: nowrap;
+    max-width: 100%;
+}
+@mixin modalBox {
+    cursor: default;
+    box-shadow: $popUpShadow;
+    background-color: $modalCardBackground;
+    border-radius: 8px;
+    hr {
+        background-color: $primaryHr;
+        border-width: 0;
+        height: 1px;
+        margin: 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+input,
+.input {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 3px 16px;
+}
+
+.activeButton {
+    background-color: $buttonActiveBackground;
+    &:hover {
+        background-color: $buttonActiveHoverBackground;
+    }
+}
+.transparent {
+    background-color: transparent;
+}

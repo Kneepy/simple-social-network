@@ -1,0 +1,2 @@
+export declare const DB_MICROSERVICE_MODULE_NAME = "DB_MICROSERVICE_MODULE";
+export declare const CONFIG_MODULE_NAME = "CONFIG_MODULE";
